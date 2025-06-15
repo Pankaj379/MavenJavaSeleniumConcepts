@@ -10,7 +10,7 @@ public class FirstTestCase {
 	public static void main(String[] args) {
 		// Test case:
 		// 1) Lauch chrome browser.
-		// 2) Open URL: https://demo.automationtesting.in/Register.html
+		// 2) Open URL: https://demo.automationtesting.in/Register.html or https://demoblaze.com/
 		// 3) Validate tittle should be "Register".
 		// 4) Close browser.
 
