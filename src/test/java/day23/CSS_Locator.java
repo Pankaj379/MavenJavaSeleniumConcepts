@@ -19,7 +19,7 @@ public class CSS_Locator {
 		
 		// tagID
 		
-		driver.findElement(By.cssSelector(""));
+		driver.findElement(By.cssSelector("test"));
 		
 		
 
