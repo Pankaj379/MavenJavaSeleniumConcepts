@@ -17,7 +17,7 @@ public class CSS_Locator {
 		// Maximize window.
 		driver.manage().window().maximize();
 		
-		// tagid:
+		// tagID
 		
 		driver.findElement(By.cssSelector(""));
 		
