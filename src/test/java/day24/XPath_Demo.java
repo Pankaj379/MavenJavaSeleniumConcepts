@@ -55,6 +55,7 @@ public class XPath_Demo {
 		// Next Topic SS : https://prnt.sc/VHPBzYeOYXp9
 		
 		driver.quit();
+		driver.close();
 		
 
 	}
