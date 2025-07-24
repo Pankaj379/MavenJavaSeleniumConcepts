@@ -1,9 +1,11 @@
 package day30;
 
 import java.time.Duration;
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class HiddenDropDownDemo {
@@ -29,12 +31,19 @@ public class HiddenDropDownDemo {
 		// To select hidden dropdown use have to uncheck the checkbox : https://prnt.sc/PpzbLjyucr5L
 		// Then the window will freeze when click on selector hub debugger.
 		driver.findElement(By.xpath("//body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/div[6]/div[1]/div[2]/div[1]/div[1]/div[2]/i[1]")).click();
-		driver.findElement(By.xpath("//span[normalize-space()='Automaton Tester']")).click();
+		
+		// Read only one option.
+		// driver.findElement(By.xpath("//span[normalize-space()='Automaton Tester']")).click();
 
 		// Count number of options.
-		// this is for test.
+		List<WebElement> listDropdown = driver.findElements(By.xpath("//div[@role='listbox']//span"));
+		System.out.println("No. of options:" + listDropdown.size());
 		
-		;
+		// Print options.
+		for(WebElement options:listDropdown) {
+			System.out.println(options.getText());
+			
+		}
 		
 	}
 
