@@ -43,6 +43,8 @@ public class HiddenDropDownDemo {
 		for(WebElement options:listDropdown) {
 			System.out.println(options.getText());
 			
+			// Another option to check dropdowns is: https://prnt.sc/P_Y0GwlzBLFd
+			
 		}
 		
 	}
