@@ -47,6 +47,29 @@ public class Static_webtable {
 			System.out.println();
 		}
 		
+		// 5) Get the books written by mukesh.
+		
+		for(int r=2;r<=row;r++) {
+			String authorName = driver.findElement(By.xpath("//table[@name='BookTable']//tr["+r+"]//td[2]")).getText();
+			
+			if(authorName.equals("Mukesh")) {
+				String bookName = driver.findElement(By.xpath("//table[@name='BookTable']//tr["+r+"]//td[1]")).getText();
+				System.out.println(authorName +"\t"+bookName);
+			}
+		}
+		
+		// 6 Get the all the total price of the books.
+		int total = 0;
+		for(int r=2;r<=row;r++) {
+			String price = driver.findElement(By.xpath("//table[@name='BookTable']//tr["+r+"]//td[4]")).getText();
+		  total = total + Integer.parseInt(price);
+		  }
+		  System.out.println("Total price of the books: "+ total);
+
+		
+		
+		// Assignemnt: https://prnt.sc/5XeU0AtS2UT5      https://prnt.sc/BI6gWjJguO7O
+		
 		
 		driver.quit();
 		
