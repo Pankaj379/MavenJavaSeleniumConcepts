@@ -1,6 +1,7 @@
 package day32;
 
 import java.time.Duration;
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -28,9 +29,9 @@ public class calenderdatepickerDemo {
 		driver.findElement(By.xpath("//input[@id='datepicker']")).click(); // Open the calender
 		
 		// Expected Date.
-		String year = "2025";
-		String month = "September";
-		String date = "25";
+		String year = "2024";
+		String month = "May";
+		String date = "20";
 		
 		while(true)
 		{
@@ -43,13 +44,24 @@ public class calenderdatepickerDemo {
 			break;
 		}
 		
-		driver.findElement(By.xpath("//span[@class='ui-icon ui-icon-circle-triangle-e']")).click(); // Click on Next.
+		//driver.findElement(By.xpath("//span[@class='ui-icon ui-icon-circle-triangle-e']")).click(); // Click on Next.
+		driver.findElement(By.xpath("//span[@class='ui-icon ui-icon-circle-triangle-w']")).click(); // Click on Previous.
 		
 		
 		}
 			
 		
-		
+		List<WebElement> allDates = driver.findElements(By.xpath("//table[@class='ui-datepicker-calendar']//tbody//tr//td//a"));
+		for(WebElement pdate:allDates)
+			
+		{
+			if(pdate.getText().equals(date)) 
+			{
+				pdate.click();
+				break;
+			}
+			
+		}
 		
 		
 
