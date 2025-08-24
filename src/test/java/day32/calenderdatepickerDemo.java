@@ -9,6 +9,81 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class calenderdatepickerDemo {
+	
+	
+	static void SelectPastDate(WebDriver driver,String year,String month,String date) {
+		
+		while(true)
+		{
+		
+		String current_Month = driver.findElement(By.xpath("//span[@class='ui-datepicker-month']")).getText();
+		String current_Year = driver.findElement(By.xpath("//span[@class='ui-datepicker-year']")).getText();
+		
+		if(current_Month.equals(month) && current_Year.equals(year))
+		{
+			break;
+		}
+		
+		//driver.findElement(By.xpath("//span[@class='ui-icon ui-icon-circle-triangle-e']")).click(); // Click on Next.
+		driver.findElement(By.xpath("//span[@class='ui-icon ui-icon-circle-triangle-w']")).click(); // Click on Previous.
+		
+		
+		}
+		
+	
+	
+	
+	List<WebElement> allDates = driver.findElements(By.xpath("//table[@class='ui-datepicker-calendar']//tbody//tr//td//a"));
+	for(WebElement pdate:allDates)
+		
+	{
+		if(pdate.getText().equals(date)) 
+		{
+			pdate.click();
+			break;
+		}
+		
+	}
+	
+	}
+	
+static void SelectFutureDate(WebDriver driver,String year,String month,String date) {
+		
+		while(true)
+		{
+		
+		String current_Month = driver.findElement(By.xpath("//span[@class='ui-datepicker-month']")).getText();
+		String current_Year = driver.findElement(By.xpath("//span[@class='ui-datepicker-year']")).getText();
+		
+		if(current_Month.equals(month) && current_Year.equals(year))
+		{
+			break;
+		}
+		
+		driver.findElement(By.xpath("//span[@class='ui-icon ui-icon-circle-triangle-e']")).click(); // Click on Next.
+		// driver.findElement(By.xpath("//span[@class='ui-icon ui-icon-circle-triangle-w']")).click(); // Click on Previous.
+		
+		
+		}
+		
+	
+	
+	
+	List<WebElement> allDates = driver.findElements(By.xpath("//table[@class='ui-datepicker-calendar']//tbody//tr//td//a"));
+	for(WebElement pdate:allDates)
+		
+	{
+		if(pdate.getText().equals(date)) 
+		{
+			pdate.click();
+			break;
+		}
+		
+	}
+	
+	}
+
+	
 
 	public static void main(String[] args) {
 		// Calender date picker demo.
@@ -29,42 +104,14 @@ public class calenderdatepickerDemo {
 		driver.findElement(By.xpath("//input[@id='datepicker']")).click(); // Open the calender
 		
 		// Expected Date.
-		String year = "2024";
+		String year = "2023";
 		String month = "May";
 		String date = "20";
 		
-		while(true)
-		{
+		 SelectPastDate(driver,year,month,date);
+		// SelectFutureDate(driver,year,month,date);
 		
-		String current_Month = driver.findElement(By.xpath("//span[@class='ui-datepicker-month']")).getText();
-		String current_Year = driver.findElement(By.xpath("//span[@class='ui-datepicker-year']")).getText();
-		
-		if(current_Month.equals(month) && current_Year.equals(year))
-		{
-			break;
-		}
-		
-		//driver.findElement(By.xpath("//span[@class='ui-icon ui-icon-circle-triangle-e']")).click(); // Click on Next.
-		driver.findElement(By.xpath("//span[@class='ui-icon ui-icon-circle-triangle-w']")).click(); // Click on Previous.
-		
-		
-		}
-			
-		
-		List<WebElement> allDates = driver.findElements(By.xpath("//table[@class='ui-datepicker-calendar']//tbody//tr//td//a"));
-		for(WebElement pdate:allDates)
-			
-		{
-			if(pdate.getText().equals(date)) 
-			{
-				pdate.click();
-				break;
-			}
-			
-		}
-		
-		
-
+				
 	}
 
 }
