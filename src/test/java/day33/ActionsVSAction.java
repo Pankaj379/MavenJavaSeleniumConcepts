@@ -33,7 +33,7 @@ public class ActionsVSAction {
 
 		driver.quit();
 		
-		// Actions vs Action : https://prnt.sc/6IrN8thDnAnV
+		// Actions vs Action: https://prnt.sc/6IrN8thDnAnV
 
 
 
