@@ -36,6 +36,8 @@ public class KeyboardCopyPasteAction {
 		act.keyDown(Keys.CONTROL).sendKeys("V").keyUp(Keys.CONTROL).perform();
 		
 		driver.quit();
+		
+		// Examples: https://prnt.sc/809_gFJEjgsN
 
 
 	}
