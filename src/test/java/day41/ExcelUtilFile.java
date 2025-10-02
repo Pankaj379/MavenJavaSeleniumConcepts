@@ -81,7 +81,7 @@ public class ExcelUtilFile {
 	}
 	
 
-	public static void setCellCount (String xlfile, String xlsheet, int rownum, int colnum , String data) throws IOException
+	public static void setCellData (String xlfile, String xlsheet, int rownum, int colnum , String data) throws IOException
 	{
 		fi = new FileInputStream(xlfile);
 		wb = new XSSFWorkbook(fi);
