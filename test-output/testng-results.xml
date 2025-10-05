@@ -1,61 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="6" total="9" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-05T13:48:56 IST" name="mysuite" finished-at="2025-10-05T13:48:56 IST" duration-ms="80">
+  <suite started-at="2025-10-05T22:13:34 IST" name="GroupSuite" finished-at="2025-10-05T22:13:34 IST" duration-ms="82">
     <groups>
+      <group name="Functional">
+        <method signature="PaymentTest.payInRupees()[pri:1, instance:day44.PaymentTest@7188af83]" name="payInRupees" class="day44.PaymentTest"/>
+        <method signature="PaymentTest.payInUSD()[pri:2, instance:day44.PaymentTest@7188af83]" name="payInUSD" class="day44.PaymentTest"/>
+        <method signature="PaymentTest.payInCAD()[pri:3, instance:day44.PaymentTest@7188af83]" name="payInCAD" class="day44.PaymentTest"/>
+      </group> <!-- Functional -->
+      <group name="Sanity">
+        <method signature="PaymentTest.payInRupees()[pri:1, instance:day44.PaymentTest@7188af83]" name="payInRupees" class="day44.PaymentTest"/>
+        <method signature="PaymentTest.payInUSD()[pri:2, instance:day44.PaymentTest@7188af83]" name="payInUSD" class="day44.PaymentTest"/>
+        <method signature="PaymentTest.payInCAD()[pri:3, instance:day44.PaymentTest@7188af83]" name="payInCAD" class="day44.PaymentTest"/>
+      </group> <!-- Sanity -->
+      <group name="Regression">
+        <method signature="PaymentTest.payInRupees()[pri:1, instance:day44.PaymentTest@7188af83]" name="payInRupees" class="day44.PaymentTest"/>
+        <method signature="PaymentTest.payInUSD()[pri:2, instance:day44.PaymentTest@7188af83]" name="payInUSD" class="day44.PaymentTest"/>
+        <method signature="PaymentTest.payInCAD()[pri:3, instance:day44.PaymentTest@7188af83]" name="payInCAD" class="day44.PaymentTest"/>
+      </group> <!-- Regression -->
     </groups>
-    <test started-at="2025-10-05T13:48:56 IST" name="test2" finished-at="2025-10-05T13:48:56 IST" duration-ms="80">
-      <class name="day43.AllAnnotations">
-        <test-method is-config="true" signature="bs()[pri:0, instance:day43.AllAnnotations@55cb6996]" started-at="2025-10-05T13:48:56 IST" name="bs" finished-at="2025-10-05T13:48:56 IST" duration-ms="26" status="PASS">
+    <test started-at="2025-10-05T22:13:34 IST" name="GroupTest" finished-at="2025-10-05T22:13:34 IST" duration-ms="82">
+      <class name="day44.PaymentTest">
+        <test-method signature="payInRupees()[pri:1, instance:day44.PaymentTest@7188af83]" started-at="2025-10-05T22:13:34 IST" name="payInRupees" finished-at="2025-10-05T22:13:34 IST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- bs -->
-        <test-method is-config="true" signature="bt()[pri:0, instance:day43.AllAnnotations@55cb6996]" started-at="2025-10-05T13:48:56 IST" name="bt" finished-at="2025-10-05T13:48:56 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- payInRupees -->
+        <test-method signature="payInUSD()[pri:2, instance:day44.PaymentTest@7188af83]" started-at="2025-10-05T22:13:34 IST" name="payInUSD" finished-at="2025-10-05T22:13:34 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- bt -->
-        <test-method is-config="true" signature="bc()[pri:0, instance:day43.AllAnnotations@55cb6996]" started-at="2025-10-05T13:48:56 IST" name="bc" finished-at="2025-10-05T13:48:56 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- payInUSD -->
+        <test-method signature="payInCAD()[pri:3, instance:day44.PaymentTest@7188af83]" started-at="2025-10-05T22:13:34 IST" name="payInCAD" finished-at="2025-10-05T22:13:34 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- bc -->
-        <test-method is-config="true" signature="bm()[pri:0, instance:day43.AllAnnotations@55cb6996]" started-at="2025-10-05T13:48:56 IST" name="bm" finished-at="2025-10-05T13:48:56 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bm -->
-        <test-method signature="test1()[pri:1, instance:day43.AllAnnotations@55cb6996]" started-at="2025-10-05T13:48:56 IST" name="test1" finished-at="2025-10-05T13:48:56 IST" duration-ms="8" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method is-config="true" signature="Am()[pri:0, instance:day43.AllAnnotations@55cb6996]" started-at="2025-10-05T13:48:56 IST" name="Am" finished-at="2025-10-05T13:48:56 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Am -->
-        <test-method is-config="true" signature="bm()[pri:0, instance:day43.AllAnnotations@55cb6996]" started-at="2025-10-05T13:48:56 IST" name="bm" finished-at="2025-10-05T13:48:56 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bm -->
-        <test-method signature="test2()[pri:2, instance:day43.AllAnnotations@55cb6996]" started-at="2025-10-05T13:48:56 IST" name="test2" finished-at="2025-10-05T13:48:56 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test2 -->
-        <test-method is-config="true" signature="Am()[pri:0, instance:day43.AllAnnotations@55cb6996]" started-at="2025-10-05T13:48:56 IST" name="Am" finished-at="2025-10-05T13:48:56 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Am -->
-        <test-method is-config="true" signature="ac()[pri:0, instance:day43.AllAnnotations@55cb6996]" started-at="2025-10-05T13:48:56 IST" name="ac" finished-at="2025-10-05T13:48:56 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ac -->
-        <test-method is-config="true" signature="at()[pri:0, instance:day43.AllAnnotations@55cb6996]" started-at="2025-10-05T13:48:56 IST" name="at" finished-at="2025-10-05T13:48:56 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- at -->
-        <test-method is-config="true" signature="as()[pri:0, instance:day43.AllAnnotations@55cb6996]" started-at="2025-10-05T13:48:56 IST" name="as" finished-at="2025-10-05T13:48:56 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- as -->
-      </class> <!-- day43.AllAnnotations -->
-    </test> <!-- test2 -->
-  </suite> <!-- mysuite -->
+        </test-method> <!-- payInCAD -->
+      </class> <!-- day44.PaymentTest -->
+    </test> <!-- GroupTest -->
+  </suite> <!-- GroupSuite -->
 </testng-results>
