@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="day44.dependsOnDemo">
+      <class name="day45.DataProviderDemo">
         <methods>
-          <include name="openApp"/>
-          <include name="login"/>
-          <include name="search"/>
+          <include name="Setup"/>
+          <include name="testCase" invocation-numbers="3"/>
+          <include name="TearDown"/>
         </methods>
-      </class> <!-- day44.dependsOnDemo -->
+      </class> <!-- day45.DataProviderDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
