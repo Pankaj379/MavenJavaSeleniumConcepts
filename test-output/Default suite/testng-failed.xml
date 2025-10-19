@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="day45.DataProviderDemo">
+      <class name="day45.ParamTestDemo">
         <methods>
-          <include name="Setup"/>
-          <include name="testCase" invocation-numbers="3"/>
-          <include name="TearDown"/>
+          <include name="TestLogo"/>
+          <include name="TestTitle"/>
+          <include name="testURL"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- day45.DataProviderDemo -->
+      </class> <!-- day45.ParamTestDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

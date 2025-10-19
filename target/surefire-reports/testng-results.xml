@@ -1,11 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
+<testng-results ignored="0" total="17" passed="17" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-04T09:26:54 IST" name="Surefire suite" finished-at="2025-10-04T09:26:54 IST" duration-ms="77">
+  <suite started-at="2025-10-19T20:52:06 IST" name="Surefire suite" finished-at="2025-10-19T20:52:30 IST" duration-ms="23436">
     <groups>
+      <group name="Functional">
+        <method signature="PaymentTest.payInRupees()[pri:1, instance:day44.PaymentTest@662b4c69]" name="payInRupees" class="day44.PaymentTest"/>
+        <method signature="PaymentTest.payInUSD()[pri:2, instance:day44.PaymentTest@662b4c69]" name="payInUSD" class="day44.PaymentTest"/>
+        <method signature="PaymentTest.payInCAD()[pri:3, instance:day44.PaymentTest@662b4c69]" name="payInCAD" class="day44.PaymentTest"/>
+      </group> <!-- Functional -->
+      <group name="Sanity">
+        <method signature="PaymentTest.payInRupees()[pri:1, instance:day44.PaymentTest@662b4c69]" name="payInRupees" class="day44.PaymentTest"/>
+        <method signature="loginTest.loginByEmail()[pri:1, instance:day44.loginTest@fba92d3]" name="loginByEmail" class="day44.loginTest"/>
+        <method signature="PaymentTest.payInUSD()[pri:2, instance:day44.PaymentTest@662b4c69]" name="payInUSD" class="day44.PaymentTest"/>
+        <method signature="loginTest.loginByFacebook()[pri:2, instance:day44.loginTest@fba92d3]" name="loginByFacebook" class="day44.loginTest"/>
+        <method signature="PaymentTest.payInCAD()[pri:3, instance:day44.PaymentTest@662b4c69]" name="payInCAD" class="day44.PaymentTest"/>
+        <method signature="loginTest.loginByInstagram()[pri:3, instance:day44.loginTest@fba92d3]" name="loginByInstagram" class="day44.loginTest"/>
+      </group> <!-- Sanity -->
+      <group name="Regression">
+        <method signature="PaymentTest.payInRupees()[pri:1, instance:day44.PaymentTest@662b4c69]" name="payInRupees" class="day44.PaymentTest"/>
+        <method signature="SignUpTest.SignUpByEmail()[pri:1, instance:day44.SignUpTest@fa49800]" name="SignUpByEmail" class="day44.SignUpTest"/>
+        <method signature="PaymentTest.payInUSD()[pri:2, instance:day44.PaymentTest@662b4c69]" name="payInUSD" class="day44.PaymentTest"/>
+        <method signature="SignUpTest.SignUpByFacebook()[pri:2, instance:day44.SignUpTest@fa49800]" name="SignUpByFacebook" class="day44.SignUpTest"/>
+        <method signature="PaymentTest.payInCAD()[pri:3, instance:day44.PaymentTest@662b4c69]" name="payInCAD" class="day44.PaymentTest"/>
+        <method signature="SignUpTest.SignUpByInstagram()[pri:3, instance:day44.SignUpTest@fa49800]" name="SignUpByInstagram" class="day44.SignUpTest"/>
+      </group> <!-- Regression -->
     </groups>
-    <test started-at="2025-10-04T09:26:54 IST" name="Surefire test" finished-at="2025-10-04T09:26:54 IST" duration-ms="77">
+    <test started-at="2025-10-19T20:52:06 IST" name="Surefire test" finished-at="2025-10-19T20:52:30 IST" duration-ms="23436">
+      <class name="day44.PaymentTest">
+        <test-method signature="payInRupees()[pri:1, instance:day44.PaymentTest@662b4c69]" started-at="2025-10-19T20:52:30 IST" name="payInRupees" finished-at="2025-10-19T20:52:30 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- payInRupees -->
+        <test-method signature="payInUSD()[pri:2, instance:day44.PaymentTest@662b4c69]" started-at="2025-10-19T20:52:30 IST" name="payInUSD" finished-at="2025-10-19T20:52:30 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- payInUSD -->
+        <test-method signature="payInCAD()[pri:3, instance:day44.PaymentTest@662b4c69]" started-at="2025-10-19T20:52:30 IST" name="payInCAD" finished-at="2025-10-19T20:52:30 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- payInCAD -->
+      </class> <!-- day44.PaymentTest -->
+      <class name="day44.loginTest">
+        <test-method signature="loginByEmail()[pri:1, instance:day44.loginTest@fba92d3]" started-at="2025-10-19T20:52:30 IST" name="loginByEmail" finished-at="2025-10-19T20:52:30 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginByEmail -->
+        <test-method signature="loginByFacebook()[pri:2, instance:day44.loginTest@fba92d3]" started-at="2025-10-19T20:52:30 IST" name="loginByFacebook" finished-at="2025-10-19T20:52:30 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginByFacebook -->
+        <test-method signature="loginByInstagram()[pri:3, instance:day44.loginTest@fba92d3]" started-at="2025-10-19T20:52:30 IST" name="loginByInstagram" finished-at="2025-10-19T20:52:30 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginByInstagram -->
+      </class> <!-- day44.loginTest -->
+      <class name="day42.SimpleLoginTest">
+        <test-method signature="openApp()[pri:1, instance:day42.SimpleLoginTest@10d307f1]" started-at="2025-10-19T20:52:06 IST" name="openApp" finished-at="2025-10-19T20:52:15 IST" duration-ms="8870" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method signature="logoCheck()[pri:2, instance:day42.SimpleLoginTest@10d307f1]" started-at="2025-10-19T20:52:15 IST" name="logoCheck" finished-at="2025-10-19T20:52:18 IST" duration-ms="3037" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoCheck -->
+        <test-method signature="login()[pri:3, instance:day42.SimpleLoginTest@10d307f1]" started-at="2025-10-19T20:52:18 IST" name="login" finished-at="2025-10-19T20:52:20 IST" duration-ms="1947" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="logout()[pri:4, instance:day42.SimpleLoginTest@10d307f1]" started-at="2025-10-19T20:52:20 IST" name="logout" finished-at="2025-10-19T20:52:26 IST" duration-ms="6118" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method signature="closeApp()[pri:5, instance:day42.SimpleLoginTest@10d307f1]" started-at="2025-10-19T20:52:26 IST" name="closeApp" finished-at="2025-10-19T20:52:30 IST" duration-ms="3328" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- day42.SimpleLoginTest -->
+      <class name="day44.SignUpTest">
+        <test-method signature="SignUpByEmail()[pri:1, instance:day44.SignUpTest@fa49800]" started-at="2025-10-19T20:52:30 IST" name="SignUpByEmail" finished-at="2025-10-19T20:52:30 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignUpByEmail -->
+        <test-method signature="SignUpByFacebook()[pri:2, instance:day44.SignUpTest@fa49800]" started-at="2025-10-19T20:52:30 IST" name="SignUpByFacebook" finished-at="2025-10-19T20:52:30 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignUpByFacebook -->
+        <test-method signature="SignUpByInstagram()[pri:3, instance:day44.SignUpTest@fa49800]" started-at="2025-10-19T20:52:30 IST" name="SignUpByInstagram" finished-at="2025-10-19T20:52:30 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignUpByInstagram -->
+      </class> <!-- day44.SignUpTest -->
+      <class name="day42.TestNGFirstExecution">
+        <test-method signature="a_openApp()[pri:1, instance:day42.TestNGFirstExecution@67c33749]" started-at="2025-10-19T20:52:30 IST" name="a_openApp" finished-at="2025-10-19T20:52:30 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- a_openApp -->
+        <test-method signature="b_loginApp()[pri:2, instance:day42.TestNGFirstExecution@67c33749]" started-at="2025-10-19T20:52:30 IST" name="b_loginApp" finished-at="2025-10-19T20:52:30 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- b_loginApp -->
+        <test-method signature="c_logoutApp()[pri:3, instance:day42.TestNGFirstExecution@67c33749]" started-at="2025-10-19T20:52:30 IST" name="c_logoutApp" finished-at="2025-10-19T20:52:30 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- c_logoutApp -->
+      </class> <!-- day42.TestNGFirstExecution -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
 </testng-results>
